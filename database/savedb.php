@@ -43,7 +43,7 @@
     $marks = $_POST['marks'];
 
     // Insert data into the table
-    $sql_insert_data = "INSERT INTO student (name, email, marks) VALUES ('$name', '$email', '$marks')";
+    $sql_insert_data = "INSERT INTO $table (name, email, marks) VALUES ('$name', '$email', '$marks')";
 
     if ($conn->query($sql_insert_data) === TRUE) {
         echo "New record inserted successfully";
